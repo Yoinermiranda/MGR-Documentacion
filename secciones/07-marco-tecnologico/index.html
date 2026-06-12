@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07. Marco Tecnológico — Documentación MGR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-brand">
+      <a href="../../index.html">Documentación MGR</a>
+      <span class="site-header-tag">Menú principal</span>
+    </div>
+    <nav class="site-header-docs">
+      <span class="site-header-docs-label">Documentos relacionados</span>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <a class="sidebar-home" href="../../index.html">&larr; Portada</a>
+    <span class="sidebar-tagline">Capítulos del documento</span>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Fundamentos del proyecto</p>
+      <nav><ul>
+        <li><a href="../../secciones/01-introduccion/index.html"><span class="num">01</span><span>Introducción</span></a></li>
+        <li><a href="../../secciones/02-resumen-proyecto/index.html"><span class="num">02</span><span>Resumen del Proyecto</span></a></li>
+        <li><a href="../../secciones/03-planteamiento/index.html"><span class="num">03</span><span>Formulación del Problema</span></a></li>
+        <li><a href="../../secciones/04-objetivos/index.html"><span class="num">04</span><span>Objetivos</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Marco y alcance</p>
+      <nav><ul>
+        <li><a href="../../secciones/05-alcance-justificacion/index.html"><span class="num">05</span><span>Alcance y Justificación</span></a></li>
+        <li><a href="../../secciones/06-marcos/index.html"><span class="num">06</span><span>Marcos (Conceptual, Legal y Teórico)</span></a></li>
+        <li><a class="active" href="../../secciones/07-marco-tecnologico/index.html"><span class="num">07</span><span>Marco Tecnológico</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Desarrollo del proyecto</p>
+      <nav><ul>
+        <li><a href="../../secciones/08-metodologia-scrum/index.html"><span class="num">08</span><span>Metodología Scrum</span></a></li>
+        <li><a href="../../secciones/09-historias-usuario/index.html"><span class="num">09</span><span>Historias de Usuario</span></a></li>
+        <li><a href="../../secciones/10-requerimientos-funcionales/index.html"><span class="num">10</span><span>Requerimientos Funcionales</span></a></li>
+        <li><a href="../../secciones/11-requerimientos-no-funcionales/index.html"><span class="num">11</span><span>Requerimientos No Funcionales</span></a></li>
+        <li><a href="../../secciones/12-diagramas-sistema/index.html"><span class="num">12</span><span>Diagramas del Sistema</span></a></li>
+        <li><a href="../../secciones/13-modelo-relacional/index.html"><span class="num">13</span><span>Modelo Relacional</span></a></li>
+        <li><a href="../../secciones/14-prototipo-interfaz/index.html"><span class="num">14</span><span>Prototipo e Interfaz</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Cierre</p>
+      <nav><ul>
+        <li><a href="../../secciones/15-conclusiones/index.html"><span class="num">15</span><span>Conclusiones</span></a></li>
+        <li><a href="../../secciones/16-referencias/index.html"><span class="num">16</span><span>Bibliografía</span></a></li>
+      </ul></nav>
+    </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <header class="content-header">
+          <span class="eyebrow">Capítulo 07 · Marco y alcance</span>
+          <h1>Marco Tecnológico</h1>
+          <p class="subtitle">Documenta las tecnologías, lenguajes, herramientas y la infraestructura utilizada para desarrollar el sistema.</p>
+        </header>
+<style>
+
+.tech-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:18px;
+    margin-top:30px;
+}
+
+
+.tech-card{
+
+    background:white;
+    border:1px solid #dbeafe;
+    border-radius:18px;
+    padding:35px 20px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+
+.tech-card:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.tech-icon{
+
+    font-size:40px;
+    margin-bottom:15px;
+
+}
+
+
+.tech-title{
+
+    font-size:20px;
+    font-weight:700;
+    color:#111827;
+
+}
+
+
+.tech-text{
+
+    margin-top:10px;
+    color:#718096;
+    font-size:16px;
+
+}
+
+</style>
+
+
+<h1>Tecnologías utilizadas - Sistema MGR</h1>
+
+
+<div class="tech-container">
+
+
+<div class="tech-card">
+
+<div class="tech-icon">⚛️</div>
+
+<div class="tech-title">
+React + Vite
+</div>
+
+<div class="tech-text">
+Frontend del sistema MGR<br>
+Interfaces dinámicas y responsivas
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🟢</div>
+
+<div class="tech-title">
+Node.js + Express
+</div>
+
+<div class="tech-text">
+Backend y API REST<br>
+Gestión de procesos del sistema
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🗄️</div>
+
+<div class="tech-title">
+Prisma + Base de Datos
+</div>
+
+<div class="tech-text">
+Administración de información<br>
+Usuarios, mesas, pedidos y productos
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🔐</div>
+
+<div class="tech-title">
+JWT Authentication
+</div>
+
+<div class="tech-text">
+Seguridad del sistema<br>
+Control de acceso de usuarios
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🎨</div>
+
+<div class="tech-title">
+Tailwind CSS
+</div>
+
+<div class="tech-text">
+Diseño moderno<br>
+Componentes adaptables
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🌐</div>
+
+<div class="tech-title">
+Vercel Deploy
+</div>
+
+<div class="tech-text">
+Despliegue del frontend<br>
+Disponibilidad del sistema web
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🚀</div>
+
+<div class="tech-title">
+Render
+</div>
+
+<div class="tech-text">
+Despliegue del backend MGR<br>
+Servidor en la nube para la API REST
+</div>
+
+</div>
+
+
+
+<div class="tech-card">
+
+<div class="tech-icon">🔧</div>
+
+<div class="tech-title">
+Git + GitHub
+</div>
+
+<div class="tech-text">
+Control de versiones<br>
+Gestión del código fuente
+</div>
+
+</div>
+
+
+</div>
+
+
+<br>
+<div><h1>Tecnologías utilizadas - Sistema MGR</h1></div>
+          <p>
+            
+          El sistema POS se desarrolla con tecnologías web modernas. En el frontend se usa React junto con Tailwind CSS para crear interfaces dinámicas y responsivas.
+          En el backend se emplea Node.js con Express para construir una API REST, incorporando JWT para la autenticación.
+          Además, se utiliza Prisma como ORM para gestionar una base de datos relacional.
+          Estas herramientas permiten crear un sistema eficiente, escalable y adaptable a las necesidades del negocio.
+        </article>
+
+        <footer class="page-nav">
+      <a class="prev" href="../06-marcos/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">06. Marcos (Conceptual, Legal y Teórico)</span></a>
+      <a class="next" href="../08-metodologia-scrum/index.html"><span class="nav-label">Siguiente &rarr;</span><span class="nav-title">08. Metodología Scrum</span></a>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 1. Cambia el título de la pestaña -->
+  <title>NN. Título de la Sección — Documentación MGR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       MENÚ PRINCIPAL (no se toca en cada página: marca + manuales/informe)
+       ============================================================ -->
+  <header class="site-header">
+    <div class="site-header-brand">
+      <a href="../../index.html">Documentación MGR</a>
+      <span class="site-header-tag">Menú principal</span>
+    </div>
+    <nav class="site-header-docs">
+      <span class="site-header-docs-label">Documentos relacionados</span>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+    </nav>
+  </header>
+
+  <div class="layout">
+
+    <!-- ============================================================
+         MENÚ DE CAPÍTULOS (sidebar)
+         2. Copia este bloque de cualquier sección ya existente
+            (por ejemplo secciones/01-introduccion/index.html) para
+            que el capítulo actual quede marcado con class="active".
+         ============================================================ -->
+    <aside class="sidebar">
+      <a class="sidebar-home" href="../../index.html">&larr; Portada</a>
+      <span class="sidebar-tagline">Capítulos del documento</span>
+
+      <div class="sidebar-group">
+        <p class="sidebar-group-title">Nombre del grupo</p>
+        <nav><ul>
+          <li><a href="../NN-slug/index.html"><span class="num">NN</span><span>Título del capítulo</span></a></li>
+          <!-- ...resto de capítulos... -->
+        </ul></nav>
+      </div>
+    </aside>
+
+    <!-- ============================================================
+         CONTENIDO DE LA SECCIÓN
+         3. Edita el eyebrow, el título, el subtítulo y el cuerpo.
+         ============================================================ -->
+    <main class="content">
+      <div class="content-inner">
+
+        <header class="content-header">
+          <span class="eyebrow">Capítulo NN · Nombre del grupo</span>
+          <h1>Título de la Sección</h1>
+          <p class="subtitle">Breve descripción de qué trata esta sección.</p>
+        </header>
+
+        <article class="prose">
+          <p>
+            Escribe aquí el contenido de la sección. Puedes usar
+            <code>&lt;h2&gt;</code> / <code>&lt;h3&gt;</code> para subtítulos,
+            párrafos, listas, tablas e imágenes.
+          </p>
+        </article>
+
+        <!-- ============================================================
+             NAVEGACIÓN ANTERIOR / SIGUIENTE
+             4. Ajusta los enlaces y títulos de la sección anterior y siguiente.
+             ============================================================ -->
+        <footer class="page-nav">
+          <a class="prev" href="../NN-slug-anterior/index.html">
+            <span class="nav-label">&larr; Anterior</span>
+            <span class="nav-title">NN. Sección anterior</span>
+          </a>
+          <a class="next" href="../NN-slug-siguiente/index.html">
+            <span class="nav-label">Siguiente &rarr;</span>
+            <span class="nav-title">NN. Sección siguiente</span>
+          </a>
+        </footer>
+
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01. Introducción — Documentación MGR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-brand">
+      <a href="../../index.html">Documentación MGR</a>
+      <span class="site-header-tag">Menú principal</span>
+    </div>
+    <nav class="site-header-docs">
+      <span class="site-header-docs-label">Documentos relacionados</span>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <a class="sidebar-home" href="../../index.html">&larr; Portada</a>
+    <span class="sidebar-tagline">Capítulos del documento</span>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Fundamentos del proyecto</p>
+      <nav><ul>
+        <li><a class="active" href="../../secciones/01-introduccion/index.html"><span class="num">01</span><span>Introducción</span></a></li>
+        <li><a href="../../secciones/02-resumen-proyecto/index.html"><span class="num">02</span><span>Resumen del Proyecto</span></a></li>
+        <li><a href="../../secciones/03-planteamiento/index.html"><span class="num">03</span><span>Formulación del Problema</span></a></li>
+        <li><a href="../../secciones/04-objetivos/index.html"><span class="num">04</span><span>Objetivos</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Marco y alcance</p>
+      <nav><ul>
+        <li><a href="../../secciones/05-alcance-justificacion/index.html"><span class="num">05</span><span>Alcance y Justificación</span></a></li>
+        <li><a href="../../secciones/06-marcos/index.html"><span class="num">06</span><span>Marcos (Conceptual, Legal y Teórico)</span></a></li>
+        <li><a href="../../secciones/07-marco-tecnologico/index.html"><span class="num">07</span><span>Marco Tecnológico</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Desarrollo del proyecto</p>
+      <nav><ul>
+        <li><a href="../../secciones/08-metodologia-scrum/index.html"><span class="num">08</span><span>Metodología Scrum</span></a></li>
+        <li><a href="../../secciones/09-historias-usuario/index.html"><span class="num">09</span><span>Historias de Usuario</span></a></li>
+        <li><a href="../../secciones/10-requerimientos-funcionales/index.html"><span class="num">10</span><span>Requerimientos Funcionales</span></a></li>
+        <li><a href="../../secciones/11-requerimientos-no-funcionales/index.html"><span class="num">11</span><span>Requerimientos No Funcionales</span></a></li>
+        <li><a href="../../secciones/12-diagramas-sistema/index.html"><span class="num">12</span><span>Diagramas del Sistema</span></a></li>
+        <li><a href="../../secciones/13-modelo-relacional/index.html"><span class="num">13</span><span>Modelo Relacional</span></a></li>
+        <li><a href="../../secciones/14-prototipo-interfaz/index.html"><span class="num">14</span><span>Prototipo e Interfaz</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Cierre</p>
+      <nav><ul>
+        <li><a href="../../secciones/15-conclusiones/index.html"><span class="num">15</span><span>Conclusiones</span></a></li>
+        <li><a href="../../secciones/16-referencias/index.html"><span class="num">16</span><span>Bibliografía</span></a></li>
+      </ul></nav>
+    </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <header class="content-header">
+          <span class="eyebrow">Capítulo 01 · Fundamentos del proyecto</span>
+          <h1>Introducción</h1>
+          <p class="subtitle">Presenta el documento al lector</p>
+        </header>
+
+        <article class="prose">
+          <div class="guide-box">
+            <span class="guide-label">Contenido</span>
+            <ul>
+            <li>Contexto general del proyecto y la entidad o problemática para la que se desarrolla.</li>
+            <li>Resumen muy breve del problema que motiva el desarrollo (se detalla más adelante).</li>
+            <li>Explicación de cómo está estructurado este documento y cómo navegar entre secciones.</li>
+            </ul>
+          </div>
+
+          <p>
+            El proyecto consiste en desarrollar un sistema de punto de venta (POS) para un restaurante, 
+            con el fin de mejorar procesos como la atención al cliente, gestión de pedidos, 
+            control de mesas y facturación. Actualmente, muchos restaurantes utilizan métodos poco eficientes 
+            que generan errores y desorganización, por lo que se propone una solución tecnológica que automatice 
+            estas tareas.
+            El sistema será desarrollado con Node.js, React y una base de datos relacional,
+             garantizando eficiencia, seguridad y escalabilidad. Además, el sistema estará diseñado bajo un 
+             enfoque basado en roles (administrador, cajero y mesero),facilitando así la gestión de tareas 
+             específicas dentro del restaurante.
+
+          </p>
+        </article>
+
+        <footer class="page-nav">
+      <a class="prev" href="../../index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">Portada</span></a>
+      <a class="next" href="../02-resumen-proyecto/index.html"><span class="nav-label">Siguiente &rarr;</span><span class="nav-title">02. Resumen del Proyecto</span></a>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

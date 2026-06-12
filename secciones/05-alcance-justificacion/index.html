@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05. Alcance y Justificación — Documentación MGR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-brand">
+      <a href="../../index.html">Documentación MGR</a>
+      <span class="site-header-tag">Menú principal</span>
+    </div>
+    <nav class="site-header-docs">
+      <span class="site-header-docs-label">Documentos relacionados</span>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+    <a class="sidebar-home" href="../../index.html">&larr; Portada</a>
+    <span class="sidebar-tagline">Capítulos del documento</span>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Fundamentos del proyecto</p>
+      <nav><ul>
+        <li><a href="../../secciones/01-introduccion/index.html"><span class="num">01</span><span>Introducción</span></a></li>
+        <li><a href="../../secciones/02-resumen-proyecto/index.html"><span class="num">02</span><span>Resumen del Proyecto</span></a></li>
+        <li><a href="../../secciones/03-planteamiento/index.html"><span class="num">03</span><span>Formulación del Problema</span></a></li>
+        <li><a href="../../secciones/04-objetivos/index.html"><span class="num">04</span><span>Objetivos</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Marco y alcance</p>
+      <nav><ul>
+        <li><a class="active" href="../../secciones/05-alcance-justificacion/index.html"><span class="num">05</span><span>Alcance y Justificación</span></a></li>
+        <li><a href="../../secciones/06-marcos/index.html"><span class="num">06</span><span>Marcos (Conceptual, Legal y Teórico)</span></a></li>
+        <li><a href="../../secciones/07-marco-tecnologico/index.html"><span class="num">07</span><span>Marco Tecnológico</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Desarrollo del proyecto</p>
+      <nav><ul>
+        <li><a href="../../secciones/08-metodologia-scrum/index.html"><span class="num">08</span><span>Metodología Scrum</span></a></li>
+        <li><a href="../../secciones/09-historias-usuario/index.html"><span class="num">09</span><span>Historias de Usuario</span></a></li>
+        <li><a href="../../secciones/10-requerimientos-funcionales/index.html"><span class="num">10</span><span>Requerimientos Funcionales</span></a></li>
+        <li><a href="../../secciones/11-requerimientos-no-funcionales/index.html"><span class="num">11</span><span>Requerimientos No Funcionales</span></a></li>
+        <li><a href="../../secciones/12-diagramas-sistema/index.html"><span class="num">12</span><span>Diagramas del Sistema</span></a></li>
+        <li><a href="../../secciones/13-modelo-relacional/index.html"><span class="num">13</span><span>Modelo Relacional</span></a></li>
+        <li><a href="../../secciones/14-prototipo-interfaz/index.html"><span class="num">14</span><span>Prototipo e Interfaz</span></a></li>
+      </ul></nav>
+    </div>
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">Cierre</p>
+      <nav><ul>
+        <li><a href="../../secciones/15-conclusiones/index.html"><span class="num">15</span><span>Conclusiones</span></a></li>
+        <li><a href="../../secciones/16-referencias/index.html"><span class="num">16</span><span>Bibliografía</span></a></li>
+      </ul></nav>
+    </div>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <header class="content-header">
+          <span class="eyebrow">Capítulo 05 · Justificación y alcance</span>
+          <h1>Alcance y Justificación</h1>
+          <p class="subtitle">Delimita qué incluye y qué no incluye el proyecto, y argumenta por qué es importante, viable y pertinente desarrollarlo.</p>
+        </header>
+
+       <h1>Alcance</h1>       
+
+          <p>
+           El sistema de gestión de punto de venta permitirán automatizar procesos como la gestión de pedidos, control de mesas, facturación y administración básica del restaurante.
+           Estará dirigido a tres tipos de usuarios: administrador, cajero y mesero, cada uno con funciones específicas dentro del sistema. Entre sus principales características se incluyen la creación de pedidos, visualización del estado de mesas, procesamiento de pagos y generación de reportes.
+           El sistema se desarrollará como una aplicación web utilizando tecnologías modernas, garantizando su funcionamiento en diferentes dispositivos.
+           Sin embargo, no se contemplan en esta etapa funcionalidades como integración con sistemas de pago externos o facturación electrónica oficial, las cuales podrán implementarse en futuras versiones.</p>
+            <h1>Justificación</h1>
+            <p>Este proyecto se justifica por la necesidad de mejorar la eficiencia en la gestión de restaurantes, 
+              reduciendo errores y optimizando procesos como pedidos y facturación.
+               Además, permite aplicar conocimientos de desarrollo de software en una solución real, 
+               utilizando tecnologías modernas y accesibles para pequeños y medianos negocios.</p>
+
+        
+        </article>
+
+        <footer class="page-nav">
+      <a class="prev" href="../04-objetivos/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">04. Objetivos</span></a>
+      <a class="next" href="../06-marcos/index.html"><span class="nav-label">Siguiente &rarr;</span><span class="nav-title">06. Marcos (Conceptual, Legal y Teórico)</span></a>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

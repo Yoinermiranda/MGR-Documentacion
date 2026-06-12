@@ -1,0 +1,28 @@
+<!--
+  HEADER.HTML — Base del menú principal del sitio
+  =================================================
+  Este archivo es la "base" desde donde se genera la cabecera
+  (site-header) de TODAS las páginas (portada y las 16 secciones).
+
+  Para cambiar el menú principal (marca, enlace a manuales, informe, etc.)
+  edita SOLO este archivo y vuelve a correr build_site.py — el script
+  toma este contenido y lo inserta en cada página, ajustando las rutas
+  según corresponda.
+
+  Marcadores disponibles:
+    {{PREFIX}}  -> se reemplaza por "" en la portada y por "../../" en
+                   cada página de sección, para que los enlaces a
+                   index.html / assets funcionen desde cualquier nivel.
+-->
+<header class="site-header">
+  <div class="site-header-brand">
+    <a href="{{PREFIX}}index.html">Documentación MGR</a>
+    <span class="site-header-tag">Menú principal</span>
+  </div>
+  <nav class="site-header-docs">
+    <span class="site-header-docs-label">Documentos relacionados</span>
+    <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+    <a href="{{PREFIX}}assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+    <a href="{{PREFIX}}assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+  </nav>
+</header>
