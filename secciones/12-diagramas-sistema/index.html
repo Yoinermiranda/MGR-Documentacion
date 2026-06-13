@@ -17,9 +17,9 @@
     </div>
     <nav class="site-header-docs">
       <span class="site-header-docs-label">Documentos relacionados</span>
-      <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
-      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
-      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="/assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="/assets/informe/informe-ieee.pdf" target="_blank" rel="noopener">Informe IEEE<span class="tag">PDF</span></a>
     </nav>
   </header>
   <div class="layout">
@@ -71,24 +71,1077 @@
           <h1>Diagramas del Sistema</h1>
           <p class="subtitle">Incluye los diagramas que representan visualmente la estructura, el comportamiento y los flujos del sistema.</p>
         </header>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagrama Flujo MGR</title>
 
-        <article class="prose">
-          <div class="guide-box">
-            <span class="guide-label">Contenido sugerido para esta sección</span>
-            <ul>
-            <li>Diagrama de casos de uso.</li>
-            <li>Diagrama de arquitectura del sistema.</li>
-            <li>Diagramas de flujo o de secuencia de los procesos principales.</li>
-            <li>Cualquier otro diagrama UML relevante (clases, componentes, despliegue).</li>
-            </ul>
-          </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
 
-          <p>
-            Reemplaza este texto guía por el contenido real de <strong>diagramas del sistema</strong>.
-            Puedes usar encabezados (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), párrafos, listas,
-            tablas e imágenes según lo necesite cada apartado.
-          </p>
-        </article>
+<meta charset="UTF-8">
+
+<title>Actores y Casos de Uso — MGR</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+
+.card{
+
+    width:900px;
+    margin:20px auto;
+    padding:25px;
+
+    background:#142946;
+
+    border-radius:15px;
+
+    color:white;
+
+}
+
+
+
+h2{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.actor{
+
+    width:200px;
+
+    padding:15px;
+
+    background:#1d365b;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    border:1px solid #3b70b5;
+
+}
+
+
+
+.actor h3{
+
+    margin:0 0 8px;
+
+    font-size:18px;
+
+}
+
+
+
+.actor p{
+
+    margin:0;
+
+    font-size:13px;
+
+}
+
+
+
+.admin{
+
+    color:#d7c2ff;
+
+    border-color:#7656ad;
+
+}
+
+
+
+.mesero{
+
+    color:#7bc8ff;
+
+}
+
+
+
+.cajero{
+
+    color:#6de0c1;
+
+    border-color:#167b70;
+
+}
+
+
+
+.cocina{
+
+    color:#ffc86b;
+
+    border-color:#b47c25;
+
+}
+
+
+
+.flecha{
+
+    font-size:28px;
+
+    color:#8292a8;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h2>
+ACTORES Y CASOS DE USO — MGR
+</h2>
+
+
+<div class="container">
+
+
+
+<div class="actor">
+
+<h3 class="admin">
+🔑 Administrador
+</h3>
+
+<p>
+Gestionar usuarios · Gestionar productos · Controlar mesas · Reportes
+</p>
+
+</div>
+
+
+
+<div class="flecha">
+↔
+</div>
+
+
+
+<div class="actor">
+
+<h3 class="mesero">
+🍽 Mesero
+</h3>
+
+<p>
+Controlar mesas · Tomar pedido · Registrar pedidos
+</p>
+
+</div>
+
+
+
+<div class="flecha">
+↔
+</div>
+
+
+
+<div class="actor">
+
+<h3 class="cajero">
+💳 Cajero
+</h3>
+
+<p>
+Consultar pedidos · Generar factura · Procesar pagos
+</p>
+
+</div>
+
+
+
+<div class="flecha">
+↔
+</div>
+
+
+
+<div class="actor">
+
+<h3 class="cocina">
+🍳 Cocina
+</h3>
+
+<p>
+Recibir pedidos · Preparar productos · Actualizar estado
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Arquitectura Software MGR</title>
+
+
+<style>
+
+body{
+
+margin:0;
+font-family:Arial,sans-serif;
+
+}
+
+
+.card{
+
+width:900px;
+
+margin:20px auto;
+
+padding:25px;
+
+background:#142946;
+
+border-radius:15px;
+
+color:white;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+font-size:22px;
+
+}
+
+
+
+.layer{
+
+width:600px;
+
+margin:15px auto;
+
+padding:15px;
+
+background:#1d365b;
+
+border-radius:10px;
+
+text-align:center;
+
+border:1px solid #3c73bd;
+
+}
+
+
+
+.layer h3{
+
+margin:0 0 8px;
+
+}
+
+
+
+.layer p{
+
+margin:0;
+
+font-size:14px;
+
+}
+
+
+
+.front{
+
+color:#75c5ff;
+
+}
+
+
+
+.backend{
+
+color:#6de0c1;
+
+border-color:#167b70;
+
+}
+
+
+
+.database{
+
+color:#ffc86b;
+
+border-color:#b47c25;
+
+}
+
+
+
+.arrow{
+
+text-align:center;
+
+font-size:30px;
+
+color:#8292a8;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h2>
+ARQUITECTURA DE SOFTWARE — MGR
+</h2>
+
+
+
+<div class="layer front">
+
+
+<h3>
+⚛️ Capa de Presentación
+</h3>
+
+
+<p>
+
+Frontend Web<br>
+Interfaces · Componentes · Vistas<br>
+Gestión de usuarios y pedidos
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+<div class="layer">
+
+
+<h3>
+🔗 Cliente HTTP / API REST
+</h3>
+
+
+<p>
+
+Comunicación Frontend - Backend<br>
+Solicitudes y respuestas del sistema
+
+</p>
+
+
+</div>
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+
+<div class="layer backend">
+
+
+<h3>
+⚙️ Backend / Lógica de Negocio
+</h3>
+
+
+<p>
+
+Autenticación PIN<br>
+Gestión de usuarios<br>
+Pedidos · Facturación · Pagos
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+<div class="layer database">
+
+
+<h3>
+🗄️ Base de Datos
+</h3>
+
+
+<p>
+
+MySQL<br>
+Usuarios · Productos · Mesas<br>
+Pedidos · Facturas
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Diagrama Arquitectura Sistema MGR</title>
+
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+
+.card{
+
+    width:1000px;
+    margin:20px auto;
+    padding:25px;
+
+    background:#142946;
+    border-radius:15px;
+
+    color:white;
+}
+
+
+h2{
+
+    text-align:center;
+    font-size:22px;
+
+}
+
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+}
+
+
+
+.box{
+
+    width:210px;
+
+    padding:15px;
+
+    background:#1d365b;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    border:1px solid #3c73bd;
+
+}
+
+
+
+.box h3{
+
+    margin:0 0 10px;
+
+    font-size:17px;
+
+}
+
+
+
+.box p{
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+
+.front{
+
+    color:#78c8ff;
+
+}
+
+
+
+.api{
+
+    color:#ffffff;
+
+}
+
+
+
+.backend{
+
+    color:#6de0c1;
+
+    border-color:#167b70;
+
+}
+
+
+
+.database{
+
+    color:#ffc86b;
+
+    border-color:#b47c25;
+
+}
+
+
+
+.arrow{
+
+    font-size:30px;
+
+    color:#8292a8;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h2>
+DIAGRAMA DE ARQUITECTURA DEL SISTEMA — MGR
+</h2>
+
+
+
+<div class="container">
+
+
+<div class="box front">
+
+
+<h3>
+💻 Usuarios
+</h3>
+
+
+<p>
+
+Administrador<br>
+Mesero<br>
+Cajero<br>
+Cocina
+
+</p>
+
+
+</div>
+
+
+
+<div class="arrow">
+→
+</div>
+
+
+
+
+<div class="box">
+
+
+<h3 class="api">
+🌐 Frontend
+</h3>
+
+
+<p>
+
+Interfaz Web<br>
+Gestión de pedidos<br>
+Visualización de datos
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="arrow">
+→
+</div>
+
+
+
+
+<div class="box backend">
+
+
+<h3>
+⚙️ Backend API
+</h3>
+
+
+<p>
+
+Autenticación<br>
+Lógica del negocio<br>
+Procesos del sistema
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="arrow">
+→
+</div>
+
+
+
+
+<div class="box database">
+
+
+<h3>
+🗄️ Base de Datos
+</h3>
+
+
+<p>
+
+Usuarios<br>
+Productos<br>
+Mesas<br>
+Pedidos<br>
+Facturas
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</body>    
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Diagrama de Despliegue MGR</title>
+
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+
+
+.card{
+
+    width:950px;
+
+    margin:20px auto;
+
+    padding:25px;
+
+    background:#142946;
+
+    border-radius:15px;
+
+    color:white;
+
+}
+
+
+h2{
+
+    text-align:center;
+
+    font-size:22px;
+
+}
+
+
+.container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.node{
+
+    width:450px;
+
+    padding:18px;
+
+    background:#1d365b;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    border:1px solid #3c73bd;
+
+}
+
+
+
+.node h3{
+
+    margin:0 0 10px;
+
+    font-size:18px;
+
+}
+
+
+
+.node p{
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+
+
+.user{
+
+    color:#78c8ff;
+
+}
+
+
+
+.server{
+
+    color:#6de0c1;
+
+    border-color:#167b70;
+
+}
+
+
+
+.database{
+
+    color:#ffc86b;
+
+    border-color:#b47c25;
+
+}
+
+
+
+.arrow{
+
+    font-size:30px;
+
+    color:#8292a8;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h2>
+DIAGRAMA DE DESPLIEGUE UML — MGR
+</h2>
+
+
+
+<div class="container">
+
+
+
+<div class="node user">
+
+
+<h3>
+👥 Dispositivo Usuario
+</h3>
+
+
+<p>
+
+Administrador · Mesero · Cajero · Cocina
+
+<br>
+
+Acceso mediante navegador web
+
+</p>
+
+
+</div>
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+<div class="node">
+
+
+<h3>
+💻 Servidor Frontend
+</h3>
+
+
+<p>
+
+Aplicación Web<br>
+
+Interfaz de usuario<br>
+
+Gestión de vistas y formularios
+
+</p>
+
+
+</div>
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+<div class="node server">
+
+
+<h3>
+⚙️ Servidor Backend API
+</h3>
+
+
+<p>
+
+Autenticación<br>
+
+Gestión de pedidos<br>
+
+Facturación<br>
+
+Procesamiento de datos
+
+</p>
+
+
+</div>
+
+
+
+<div class="arrow">
+↓
+</div>
+
+
+
+
+<div class="node database">
+
+
+<h3>
+🗄️ Servidor Base de Datos
+</h3>
+
+
+<p>
+
+MySQL<br>
+
+Usuarios<br>
+
+Productos<br>
+
+Mesas<br>
+
+Pedidos<br>
+
+Facturas
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
+       
 
         <footer class="page-nav">
       <a class="prev" href="../11-requerimientos-no-funcionales/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">11. Requerimientos No Funcionales</span></a>

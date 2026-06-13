@@ -17,9 +17,9 @@
     </div>
     <nav class="site-header-docs">
       <span class="site-header-docs-label">Documentos relacionados</span>
-      <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
-      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
-      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="/assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="/assets/informe/informe-ieee.pdf" target="_blank" rel="noopener">Informe IEEE<span class="tag">PDF</span></a>
     </nav>
   </header>
   <div class="layout">
@@ -72,22 +72,440 @@
           <p class="subtitle">Documenta la estructura de la base de datos: entidades, relaciones, atributos y el diccionario de datos correspondiente.</p>
         </header>
 
-        <article class="prose">
-          <div class="guide-box">
-            <span class="guide-label">Contenido sugerido para esta sección</span>
-            <ul>
-            <li>Diagrama entidad-relación (ERD) del sistema.</li>
-            <li>Diccionario de datos: tablas, campos, tipos de dato, llaves primarias y foráneas.</li>
-            <li>Reglas de negocio relevantes a nivel de datos (restricciones, integridad referencial).</li>
-            </ul>
-          </div>
+       <!DOCTYPE html>
+<html lang="es">
 
-          <p>
-            Reemplaza este texto guía por el contenido real de <strong>modelo relacional</strong>.
-            Puedes usar encabezados (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), párrafos, listas,
-            tablas e imágenes según lo necesite cada apartado.
-          </p>
-        </article>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Modelo Relacional MGR</title>
+
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+}
+
+
+.card{
+
+width:1100px;
+
+margin:20px auto;
+
+padding:25px;
+
+background:#142946;
+
+border-radius:15px;
+
+color:white;
+
+}
+
+
+
+h2{
+
+text-align:center;
+
+font-size:22px;
+
+}
+
+
+
+.info{
+
+text-align:center;
+
+color:#cbd6e6;
+
+margin-bottom:20px;
+
+}
+
+
+
+.container{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.domain{
+
+width:230px;
+
+padding:15px;
+
+background:#1d365b;
+
+border-radius:10px;
+
+border:1px solid #3c73bd;
+
+}
+
+
+
+.domain h3{
+
+margin:0 0 10px;
+
+font-size:16px;
+
+}
+
+
+
+.domain p{
+
+font-size:13px;
+
+line-height:1.5;
+
+}
+
+
+
+.admin{
+
+color:#d8c4ff;
+
+border-color:#7656ad;
+
+}
+
+
+
+.orders{
+
+color:#75c5ff;
+
+}
+
+
+
+.kitchen{
+
+color:#ffc86b;
+
+border-color:#b47c25;
+
+}
+
+
+
+.pay{
+
+color:#6de0c1;
+
+border-color:#167b70;
+
+}
+
+
+
+.footer{
+
+margin-top:20px;
+
+background:#1d365b;
+
+padding:15px;
+
+border-radius:10px;
+
+text-align:center;
+
+font-size:14px;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="card">
+
+
+<h2>
+MODELO RELACIONAL — MGR
+</h2>
+
+
+<div class="info">
+
+Sistema de Gestión para Restaurantes · Modelo de datos del aplicativo
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="domain admin">
+
+
+<h3>
+👤 Usuarios
+</h3>
+
+
+<p>
+
+usuarios<br>
+
+roles<br>
+
+credenciales<br>
+
+sesiones
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="domain">
+
+
+<h3>
+🍽 Restaurantes y Mesas
+</h3>
+
+
+<p>
+
+restaurantes<br>
+
+mesas<br>
+
+estados_mesa
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="domain">
+
+
+<h3>
+📦 Productos / Menú
+</h3>
+
+
+<p>
+
+productos<br>
+
+categorias<br>
+
+precios<br>
+
+disponibilidad
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="domain orders">
+
+
+<h3>
+📝 Pedidos
+</h3>
+
+
+<p>
+
+pedidos<br>
+
+detalle_pedido<br>
+
+estado_pedido
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="domain kitchen">
+
+
+<h3>
+👨‍🍳 Cocina
+</h3>
+
+
+<p>
+
+pedidos_cocina<br>
+
+preparacion<br>
+
+actualizacion_estado
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="domain pay">
+
+
+<h3>
+💳 Facturación y Pagos
+</h3>
+
+
+<p>
+
+facturas<br>
+
+pagos<br>
+
+metodos_pago
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="domain">
+
+
+<h3>
+📊 Inventario
+</h3>
+
+
+<p>
+
+inventario<br>
+
+stock<br>
+
+movimientos_producto
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="domain">
+
+
+<h3>
+📈 Reportes
+</h3>
+
+
+<p>
+
+ventas<br>
+
+cierres<br>
+
+estadisticas
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div class="footer">
+
+<b>Relaciones principales:</b><br><br>
+
+Usuario 1:N Pedidos |
+
+Mesa 1:N Pedidos |
+
+Pedido 1:N DetallePedido |
+
+Producto 1:N DetallePedido |
+
+Pedido 1:1 Factura |
+
+Producto 1:1 Inventario
+
+</div>
+
+
+
+<div class="footer">
+
+<b>Integridad:</b><br>
+
+Claves foráneas · Validación de datos · Control de estados · Historial de pedidos
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
 
         <footer class="page-nav">
       <a class="prev" href="../12-diagramas-sistema/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">12. Diagramas del Sistema</span></a>

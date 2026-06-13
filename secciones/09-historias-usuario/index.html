@@ -17,9 +17,9 @@
     </div>
     <nav class="site-header-docs">
       <span class="site-header-docs-label">Documentos relacionados</span>
-      <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
-      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
-      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="/assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="/assets/informe/informe-ieee.pdf" target="_blank" rel="noopener">Informe IEEE<span class="tag">PDF</span></a>
     </nav>
   </header>
   <div class="layout">
@@ -72,22 +72,185 @@
           <p class="subtitle">Presenta las historias de usuario que describen las necesidades del usuario en formato ágil, junto con sus criterios de aceptación.</p>
         </header>
 
-        <article class="prose">
-          <div class="guide-box">
-            <span class="guide-label">Contenido sugerido para esta sección</span>
-            <ul>
-            <li>Formato sugerido: "Como [rol], quiero [funcionalidad], para [beneficio]".</li>
-            <li>Tabla con: identificador, historia, criterios de aceptación, prioridad y estimación (puntos de historia).</li>
-            <li>Relación de cada historia con los objetivos específicos del proyecto.</li>
-            </ul>
-          </div>
+      <section id="historias-usuario">
 
-          <p>
-            Reemplaza este texto guía por el contenido real de <strong>historias de usuario</strong>.
-            Puedes usar encabezados (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), párrafos, listas,
-            tablas e imágenes según lo necesite cada apartado.
-          </p>
-        </article>
+  <h2>14. Historias de Usuario</h2>
+
+  <h3>
+    Requerimientos funcionales desde la perspectiva de los actores del sistema
+  </h3>
+
+
+  <p>
+    Las historias de usuario definen las funcionalidades principales del sistema
+    <strong>MGR (Sistema de Gestión para Restaurantes)</strong> desde la perspectiva
+    de los actores involucrados. Estas permiten identificar las necesidades de cada
+    rol y establecer los resultados esperados dentro de los procesos del restaurante.
+  </p>
+
+
+  <table border="1">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Rol</th>
+        <th>Funcionalidad</th>
+        <th>Resultado esperado</th>
+        <th>Escenarios</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+
+
+      <tr>
+        <td>HU01</td>
+        <td>Administrador</td>
+        <td>Registrar usuarios del sistema con sus respectivos roles.</td>
+        <td>Gestionar el acceso de empleados dentro de la plataforma.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU02</td>
+        <td>Administrador</td>
+        <td>Administrar productos del restaurante con nombre, precio, categoría y estado.</td>
+        <td>Mantener actualizado el catálogo de productos.</td>
+        <td>4</td>
+      </tr>
+
+
+      <tr>
+        <td>HU03</td>
+        <td>Administrador</td>
+        <td>Crear y gestionar categorías de productos.</td>
+        <td>Organizar correctamente el menú del restaurante.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU04</td>
+        <td>Administrador</td>
+        <td>Consultar estadísticas y reportes del restaurante.</td>
+        <td>Obtener información para apoyar la toma de decisiones.</td>
+        <td>4</td>
+      </tr>
+
+
+      <tr>
+        <td>HU05</td>
+        <td>Administrador</td>
+        <td>Gestionar mesas disponibles del establecimiento.</td>
+        <td>Mantener control de la distribución y estado de mesas.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU06</td>
+        <td>Mesero</td>
+        <td>Registrar pedidos asociados a una mesa.</td>
+        <td>Enviar correctamente las órdenes al área de cocina.</td>
+        <td>4</td>
+      </tr>
+
+
+      <tr>
+        <td>HU07</td>
+        <td>Mesero</td>
+        <td>Consultar disponibilidad y estado de mesas.</td>
+        <td>Asignar mesas de manera organizada.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU08</td>
+        <td>Mesero</td>
+        <td>Actualizar el estado de los pedidos realizados.</td>
+        <td>Permitir seguimiento del proceso de atención.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU09</td>
+        <td>Cocinero</td>
+        <td>Visualizar pedidos pendientes de preparación.</td>
+        <td>Organizar la preparación de los productos solicitados.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU10</td>
+        <td>Cocinero</td>
+        <td>Cambiar el estado del pedido durante la preparación.</td>
+        <td>Mantener informado al mesero sobre el avance.</td>
+        <td>4</td>
+      </tr>
+
+
+      <tr>
+        <td>HU11</td>
+        <td>Cocinero</td>
+        <td>Consultar detalles de los productos solicitados.</td>
+        <td>Preparar correctamente cada pedido.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU12</td>
+        <td>Cajero</td>
+        <td>Consultar pedidos finalizados para generar cobro.</td>
+        <td>Realizar el proceso de facturación correctamente.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU13</td>
+        <td>Cajero</td>
+        <td>Registrar pagos realizados por los clientes.</td>
+        <td>Mantener control de las ventas del restaurante.</td>
+        <td>4</td>
+      </tr>
+
+
+      <tr>
+        <td>HU14</td>
+        <td>Cajero</td>
+        <td>Generar comprobante de pago de la venta.</td>
+        <td>Entregar soporte de la transacción realizada.</td>
+        <td>3</td>
+      </tr>
+
+
+      <tr>
+        <td>HU15</td>
+        <td>Administrador</td>
+        <td>Visualizar dashboard con información general del sistema.</td>
+        <td>Controlar las operaciones del restaurante.</td>
+        <td>4</td>
+      </tr>
+
+
+    </tbody>
+
+  </table>
+
+
+  <div class="navigation">
+
+  </div>
+
+
+</section>
 
         <footer class="page-nav">
       <a class="prev" href="../08-metodologia-scrum/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">08. Metodología Scrum</span></a>

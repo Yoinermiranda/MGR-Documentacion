@@ -17,9 +17,9 @@
     </div>
     <nav class="site-header-docs">
       <span class="site-header-docs-label">Documentos relacionados</span>
-      <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
-      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
-      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="/assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="/assets/informe/informe-ieee.pdf" target="_blank" rel="noopener">Informe IEEE<span class="tag">PDF</span></a>
     </nav>
   </header>
   <div class="layout">
@@ -72,21 +72,231 @@
           <p class="subtitle">Lista las funciones específicas que el sistema debe ser capaz de realizar.</p>
         </header>
 
-        <article class="prose">
-          <div class="guide-box">
-            <span class="guide-label">Contenido sugerido para esta sección</span>
-            <ul>
-            <li>Tabla de requerimientos: código (RF-01, RF-02...), nombre, descripción, prioridad.</li>
-            <li>Relación de cada requerimiento con la(s) historia(s) de usuario que lo originan.</li>
-            </ul>
-          </div>
+        <section id="requerimientos-funcionales">
 
-          <p>
-            Reemplaza este texto guía por el contenido real de <strong>requerimientos funcionales</strong>.
-            Puedes usar encabezados (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), párrafos, listas,
-            tablas e imágenes según lo necesite cada apartado.
-          </p>
-        </article>
+  <h2>15. Requerimientos Funcionales</h2>
+
+  <h3>
+    Funcionalidades principales del sistema MGR según los módulos y actores involucrados
+  </h3>
+
+
+  <p>
+    Los requerimientos funcionales describen las capacidades principales que debe
+    cumplir el sistema <strong>MGR (Sistema de Gestión para Restaurantes)</strong>.
+    Estos definen las operaciones necesarias para la administración del restaurante,
+    control de usuarios, pedidos, mesas, pagos y reportes.
+  </p>
+
+
+  <table border="1">
+
+    <thead>
+
+      <tr>
+        <th>ID</th>
+        <th>Módulo</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Actor</th>
+        <th>Prioridad</th>
+      </tr>
+
+    </thead>
+
+
+    <tbody>
+
+
+      <tr>
+        <td>RF01</td>
+        <td>Autenticación</td>
+        <td>Inicio de sesión mediante PIN</td>
+        <td>
+          Permitir el acceso al sistema mediante PIN según el rol asignado al usuario.
+        </td>
+        <td>Administrador / Cajero / Mesero / Cocinero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF02</td>
+        <td>Gestión de usuarios</td>
+        <td>Administración de usuarios</td>
+        <td>
+          Crear, editar, eliminar y consultar usuarios registrados en el sistema.
+        </td>
+        <td>Administrador</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF03</td>
+        <td>Gestión de roles</td>
+        <td>Asignación de roles</td>
+        <td>
+          Permitir asignar permisos según los roles:
+          Administrador, Cajero, Mesero y Cocinero.
+        </td>
+        <td>Administrador</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF04</td>
+        <td>Gestión de mesas</td>
+        <td>Control de mesas</td>
+        <td>
+          Visualizar y actualizar el estado de las mesas disponibles.
+        </td>
+        <td>Administrador / Mesero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF05</td>
+        <td>Pedidos</td>
+        <td>Crear pedidos</td>
+        <td>
+          Registrar pedidos asociados a mesas o clientes del restaurante.
+        </td>
+        <td>Mesero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF06</td>
+        <td>Pedidos</td>
+        <td>Editar pedidos</td>
+        <td>
+          Agregar, modificar o eliminar productos dentro de un pedido activo.
+        </td>
+        <td>Mesero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF07</td>
+        <td>Pedidos</td>
+        <td>Control de estados</td>
+        <td>
+          Gestionar estados del pedido:
+          abierto, preparando, listo y cerrado.
+        </td>
+        <td>Mesero / Cocinero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF08</td>
+        <td>Menú</td>
+        <td>Gestión de productos y categorías</td>
+        <td>
+          Administrar productos disponibles y categorías del menú.
+        </td>
+        <td>Administrador</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF09</td>
+        <td>Pagos</td>
+        <td>Registro de pagos</td>
+        <td>
+          Registrar pagos realizados mediante diferentes métodos.
+        </td>
+        <td>Cajero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF10</td>
+        <td>Pedidos</td>
+        <td>Cierre de pedidos</td>
+        <td>
+          Permitir cerrar pedidos una vez confirmado el pago.
+        </td>
+        <td>Cajero</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF11</td>
+        <td>Caja</td>
+        <td>Apertura y cierre de caja</td>
+        <td>
+          Controlar los turnos de caja mediante apertura y cierre.
+        </td>
+        <td>Cajero</td>
+        <td>Media</td>
+      </tr>
+
+
+      <tr>
+        <td>RF12</td>
+        <td>Caja</td>
+        <td>Movimientos de caja</td>
+        <td>
+          Registrar ingresos y egresos adicionales del restaurante.
+        </td>
+        <td>Cajero</td>
+        <td>Media</td>
+      </tr>
+
+
+      <tr>
+        <td>RF13</td>
+        <td>Reportes</td>
+        <td>Generación de reportes</td>
+        <td>
+          Crear reportes de ventas y movimientos del sistema.
+        </td>
+        <td>Administrador</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF14</td>
+        <td>Seguridad</td>
+        <td>Control de acceso</td>
+        <td>
+          Restringir funcionalidades según el rol del usuario.
+        </td>
+        <td>Sistema</td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RF15</td>
+        <td>Consulta</td>
+        <td>Consulta de información</td>
+        <td>
+          Permitir consultar información estructurada en tiempo real.
+        </td>
+        <td>Administrador / Cajero / Mesero</td>
+        <td>Media</td>
+      </tr>
+
+
+    </tbody>
+
+
+  </table>
+
+
+</section>
 
         <footer class="page-nav">
       <a class="prev" href="../09-historias-usuario/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">09. Historias de Usuario</span></a>

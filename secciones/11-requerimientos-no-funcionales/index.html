@@ -17,9 +17,9 @@
     </div>
     <nav class="site-header-docs">
       <span class="site-header-docs-label">Documentos relacionados</span>
-      <a href="https://TU-DOMINIO-DE-DESPLIEGUE/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
-      <a href="../../assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
-      <a href="../../assets/informe/informe-final.pdf" target="_blank" rel="noopener">Informe Final<span class="tag">PDF</span></a>
+      <a href="https://manual-usuario-664x.vercel.app/" target="_blank" rel="noopener">Manual de Usuario<span class="tag">WEB</span></a>
+      <a href="/assets/manuales/manual-tecnico.pdf" target="_blank" rel="noopener">Manual Técnico<span class="tag">PDF</span></a>
+      <a href="/assets/informe/informe-ieee.pdf" target="_blank" rel="noopener">Informe IEEE<span class="tag">PDF</span></a>
     </nav>
   </header>
   <div class="layout">
@@ -72,21 +72,146 @@
           <p class="subtitle">Describe las cualidades y restricciones que debe cumplir el sistema, más allá de sus funciones específicas.</p>
         </header>
 
-        <article class="prose">
-          <div class="guide-box">
-            <span class="guide-label">Contenido sugerido para esta sección</span>
-            <ul>
-            <li>Categorías típicas: rendimiento, seguridad, usabilidad, disponibilidad, escalabilidad, mantenibilidad.</li>
-            <li>Tabla de requerimientos: código (RNF-01, RNF-02...), categoría, descripción, criterio de cumplimiento.</li>
-            </ul>
-          </div>
+      <section id="requerimientos-no-funcionales">
 
-          <p>
-            Reemplaza este texto guía por el contenido real de <strong>requerimientos no funcionales</strong>.
-            Puedes usar encabezados (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>), párrafos, listas,
-            tablas e imágenes según lo necesite cada apartado.
-          </p>
-        </article>
+  <h2>16. Requerimientos No Funcionales</h2>
+
+  <h3>
+    Características de calidad y restricciones del sistema MGR
+  </h3>
+
+
+  <p>
+    Los requerimientos no funcionales establecen las características de calidad,
+    seguridad, rendimiento y mantenimiento que debe cumplir el sistema
+    <strong>MGR (Sistema de Gestión para Restaurantes)</strong> para garantizar
+    un funcionamiento confiable, eficiente y seguro.
+  </p>
+
+
+  <table border="1">
+
+    <thead>
+
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Prioridad</th>
+      </tr>
+
+    </thead>
+
+
+    <tbody>
+
+
+      <tr>
+        <td>RNF01</td>
+        <td>Seguridad</td>
+        <td>
+          El sistema debe garantizar protección mediante autenticación por PIN,
+          control de acceso basado en roles y restricción de funcionalidades según permisos.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF02</td>
+        <td>Rendimiento</td>
+        <td>
+          El sistema debe responder rápidamente a las solicitudes realizadas por los
+          usuarios durante la operación del restaurante.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF03</td>
+        <td>Disponibilidad</td>
+        <td>
+          La plataforma debe mantenerse disponible durante el horario de funcionamiento
+          del restaurante.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF04</td>
+        <td>Usabilidad</td>
+        <td>
+          La interfaz debe ser intuitiva, organizada y fácil de utilizar para reducir
+          errores durante los procesos operativos.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF05</td>
+        <td>Escalabilidad</td>
+        <td>
+          La arquitectura del sistema debe permitir futuras mejoras, nuevos módulos
+          e integraciones sin afectar el funcionamiento principal.
+        </td>
+        <td>Media</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF06</td>
+        <td>Mantenibilidad</td>
+        <td>
+          El código debe estar organizado, documentado y estructurado mediante una
+          arquitectura por capas que facilite su mantenimiento.
+        </td>
+        <td>Media</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF07</td>
+        <td>Compatibilidad</td>
+        <td>
+          El sistema debe funcionar correctamente en diferentes navegadores modernos
+          y adaptarse a distintos tamaños de pantalla.
+        </td>
+        <td>Media</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF08</td>
+        <td>Integridad de datos</td>
+        <td>
+          El sistema debe garantizar consistencia, seguridad y veracidad en la
+          información almacenada durante los procesos del restaurante.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+      <tr>
+        <td>RNF09</td>
+        <td>Respaldo</td>
+        <td>
+          Debe contar con mecanismos de recuperación ante fallos y copias de seguridad
+          para proteger la información del sistema.
+        </td>
+        <td>Alta</td>
+      </tr>
+
+
+    </tbody>
+
+
+  </table>
+
+
+</section>
 
         <footer class="page-nav">
       <a class="prev" href="../10-requerimientos-funcionales/index.html"><span class="nav-label">&larr; Anterior</span><span class="nav-title">10. Requerimientos Funcionales</span></a>
